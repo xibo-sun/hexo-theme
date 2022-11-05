@@ -10,6 +10,11 @@ btn:
   tags: Tags
   archives: Archives
   getting_started: Getting Started
+  about: About
+  notes: Notes
+  more: More
+  comments: Comments
+  friends: Friends
 
 meta:
   recent_update: Recent Update
