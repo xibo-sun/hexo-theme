@@ -2,7 +2,6 @@
 const content = theme.footer.content;
 function layoutDiv() {
   var el = '';
-  el += '<footer class="page-footer reveal fs12">';
   el += '<hr>';
   // sitemap
   if (theme.footer.sitemap && Object.keys(theme.footer.sitemap).length > 0) {
@@ -34,8 +33,13 @@ function layoutDiv() {
       });
     }
   }
-  el += '</div></footer>';
+  el += '</div>';
   return el;
 }
 %>
+<footer class="page-footer reveal fs12">
 <%- layoutDiv() %>
+<% if (theme.footer.beian.enable) { %>
+  <%- partial('footer/beian') %>
+<% } %>
+</footer>
